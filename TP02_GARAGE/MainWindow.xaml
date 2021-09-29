@@ -1,0 +1,35 @@
+﻿<Window x:Class="TP02_GARAGE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TP02_GARAGE"
+        mc:Ignorable="d"
+        Title="Application Garage" Height="450" Width="800" Background="#FF4B5491">
+    <Grid>
+        <TextBlock Margin="299,11,298,0" TextWrapping="Wrap" Text="Entrée voiture" FontSize="24" Foreground="#FFF3EA27" FontFamily="Showcard Gothic" TextAlignment="Center" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" HorizontalAlignment="Center" Height="40">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.01"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Label Content="Matricule" HorizontalAlignment="Left" Margin="52,94,0,0" VerticalAlignment="Top" Foreground="#FFE6D481" FontSize="16"/>
+        <Label Content="Descriptif de la panne" HorizontalAlignment="Left" Margin="52,142,0,0" VerticalAlignment="Top" Foreground="#FFE6D481" FontSize="16" Height="59" Width="178"/>
+        <TextBox x:Name="tbxMatricule" HorizontalAlignment="Left" Height="23" Margin="133,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" Foreground="#FFE6D481" FontSize="16"/>
+        <TextBox x:Name="tbxDesc" HorizontalAlignment="Left" Height="143" Margin="65,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="333" Foreground="#FFE6D481" FontSize="16"/>
+        <CheckBox x:Name="chkbSociete" Content="Voiture de société" HorizontalAlignment="Left" Margin="461,100,0,0" VerticalAlignment="Top"
+                  Foreground="#FFE6D481" FontSize="16" FontWeight="Bold"/>
+        <Image x:Name="imgVoiture" HorizontalAlignment="Left" Height="143" Margin="461,170,0,0" VerticalAlignment="Top" Width="234" Source="templateVoiture.jfif"/>
+        <Button Content="Cliquer pour importer une image ..." 
+                HorizontalAlignment="Left" Margin="461,127,0,0" 
+                VerticalAlignment="Top" Width="204" Background="#FFACC8D8" 
+                Foreground="#FF202234" Click="ImporterImage_Click"/>
+        <Button Content="Enregistrer en base" HorizontalAlignment="Left" Background="#FFACC8D8" 
+                Foreground="#FF202234" Margin="461,335,0,0" VerticalAlignment="Top" Width="137" Click="EnregistrerBase_Click"/>
+
+    </Grid>
+</Window>

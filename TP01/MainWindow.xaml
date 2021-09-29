@@ -1,0 +1,22 @@
+﻿<Window x:Class="TP01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TP01"
+        mc:Ignorable="d"
+        Title="Application calcul TTC" Height="228.341" Width="887.995" Background="#FF6166C3">
+    <Grid>
+        <!-- textbloc pour les labels - text non modifiable -->
+        <TextBlock HorizontalAlignment="Left" Margin="26,80,0,0" TextWrapping="Wrap" Text="Montant HT" VerticalAlignment="Top" Height="29" Width="109" Foreground="#FFDDEC80" FontSize="16" TextAlignment="Center"/>
+        <TextBox x:Name="tbxHT" HorizontalAlignment="Left" Height="23" Margin="140,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFAFCEF3" Foreground="Black" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="286,81,0,0" TextWrapping="Wrap" Text="TVA" VerticalAlignment="Top" Height="29" Width="60" Foreground="#FFDDEC80" FontSize="16" TextAlignment="Center"/>
+        <!-- textbox pour la saisie du montant HT-->
+        <TextBox x:Name="tbxTVA" HorizontalAlignment="Left" Height="29" Margin="346,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFAFCEF3" Foreground="Black" FontSize="16"/>
+        <Button Content="Calcul TVA" HorizontalAlignment="Left" Margin="506,80,0,0" VerticalAlignment="Top" Width="113" Height="29" Background="#FFA7ABFB" FontSize="14" Click="CalculTVA_Click"/>
+        <Label x:Name="lblTTC" Content="" HorizontalAlignment="Left" Margin="648,81,0,0" VerticalAlignment="Top"
+               Height="29" Width="115" Foreground="#FFDDEC80" FontSize="16"/>
+        <!-- Un label pour afficher le resultat : Un label comme le textblocl ne sont pas modifiables HT-->
+
+    </Grid>
+</Window>

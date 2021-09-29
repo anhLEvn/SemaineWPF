@@ -1,0 +1,23 @@
+﻿<Window x:Class="BinbingObjet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BinbingObjet"
+        mc:Ignorable="d"
+        Title="Gestion des clients" Height="450" Width="800" Background="#FF6380CF">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="70,73,0,0" TextWrapping="Wrap" Text="Numéro " VerticalAlignment="Top" FontSize="16" Foreground="#FFFDFD51"/>
+        <TextBlock HorizontalAlignment="Left" Margin="70,108,0,0" TextWrapping="Wrap" Text="Nom  " VerticalAlignment="Top" FontSize="16" Foreground="#FFFDFD51"/>
+        <TextBlock HorizontalAlignment="Left" Margin="70,141,0,0" TextWrapping="Wrap" Text="Prénom  " VerticalAlignment="Top" FontSize="16" Foreground="#FFFDFD51"/>
+        <TextBlock HorizontalAlignment="Left" Margin="70,183,0,0" TextWrapping="Wrap" Text="Adresse mail " VerticalAlignment="Top" FontSize="16" Foreground="#FFFDFD51"/>
+        <TextBox  x:Name="tbxNum" HorizontalAlignment="Left" Height="23" Margin="173,66,0,0" TextWrapping="Wrap" 
+                  Text="{Binding Path=Id, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120" FontSize="16" Foreground="#FF494936"/>
+        <TextBox x:Name="tbxNom" HorizontalAlignment="Left" Height="23" Margin="173,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212" FontSize="16" Foreground="#FF494936"/>
+        <TextBox x:Name="tbxPrenom" HorizontalAlignment="Left" Height="23" Margin="173,143,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212" FontSize="16" Foreground="#FF494936"/>
+        <TextBox x:Name="tbxMail" HorizontalAlignment="Left" Height="23" Margin="173,183,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="386" FontSize="16" Foreground="#FF494936"/>
+        <Button Content="Générer Client" HorizontalAlignment="Left" Margin="625,183,0,0" VerticalAlignment="Top" Width="103" Height="21" Click="GenererClient_Click"/>
+
+
+    </Grid>
+</Window>
